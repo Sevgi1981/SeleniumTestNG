@@ -1,0 +1,10 @@
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd" >
+<suite name="smoke day 9 headless">
+    <test name="smoke day 9 ">
+        <classes>
+            <class name="code.HasanLessons.day08_IframeAndNegaiveTest.c2_Iframe"></class>
+            <class name="code.HasanLessons.day08_IframeAndNegaiveTest.c1_SmartBearNegativeTest"></class>
+
+        </classes>
+    </test>
+</suite>

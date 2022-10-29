@@ -1,0 +1,100 @@
+
+WEBDRIVERWAIT CLASS (Explicit Wait) Total 20
+
+IMPLICIT WAIT
+#Implicit Wait in Selenium
+The Implicit Wait in Selenium is used to tell the web driver to wait
+for a certain amount of time before it throws a “No Such Element Exception”.
+The default setting is 0. Once we set the time, the web driver will wait for the element
+for that time before throwing an exception.
+
+Selenium Web Driver has borrowed the idea of implicit waits from Watir.
+In the below example we have declared an implicit wait with the time frame of 10 seconds.
+It means that if the element is not located on the web page within that time frame, it will throw an exception.
+
+To declare implicit wait in Selenium WebDriver:
+
+Implicit Wait syntax:
+```
+driver.manage().timeouts().implicitlyWait(TimeOut, TimeUnit.SECONDS);
+
+EXPLICIT WAIT
+
+The Explicit Wait in Selenium is used to tell the Web Driver to wait for certain conditions
+(Expected Conditions) or maximum time exceeded before throwing “ElementNotVisibleException” exception.
+It is an intelligent kind of wait, but it can be applied only for specified elements.
+It gives better options than implicit wait as it waits for dynamically loaded Ajax elements.
+
+Once we declare explicit wait we have to use “ExpectedConditions” or we can configure how frequently
+we want to check the condition using Fluent Wait. These days while implementing we are using Thread.Sleep() generally
+it is not recommended to use.
+
+n the below example, we are creating reference wait for “WebDriverWait” class and instantiating using “WebDriver” reference, and we are giving a maximum time frame of 20 seconds.
+## Explicit Wait syntax:
+```
+WebDriverWait wait = new WebDriverWait(WebDriverRefrence,TimeOut);
+package guru.test99;
+	-> We use explicit wait If we are waiting for some specific webelement or action to happen.
+	- This will wait upto given seconds like implicit wait.(if condition happens on the third second wait will wait for 3 second)
+	(it wont wait whole time to get finish it will only wait until condition gets true)
+	- After 20 It will throw TimeOutException if condition not happens
+
+Examples :
+alertIsPresent()
+elementSelectionStateToBe()
+elementToBeClickable()
+elementToBeSelected()
+frameToBeAvaliableAndSwitchToIt()
+invisibilityOfTheElementLocated()
+invisibilityOfElementWithText()
+presenceOfAllElementsLocatedBy()
+presenceOfElementLocated()
+textToBePresentInElement()
+textToBePresentInElementLocated()
+textToBePresentInElementValue()
+titleIs()
+titleContains()
+visibilityOf()
+visibilityOfAllElements()
+visibilityOfAllElementsLocatedBy()
+visibilityOfElementLocated()
+
+
+
+What Is TestNG.Xml?
+TestNG.xml file is a configuration file that helps in organizing our tests.
+It allows testers to create and handle multiple test classes, define test suites and tests.
+
+It makes a tester’s job easier by controlling the execution of tests by putting all the test cases together
+and run it under one XML file. This is a beautiful concept, without which, it is difficult to work in TestNG.
+
+Advantages Of TestNG.xml
+Major advantages of TestNG.xml file are:
+
+It provides parallel execution of test methods.
+It allows the dependency of one test method on another test method.
+It helps in prioritizing our test methods.
+It allows grouping of test methods into test groups.
+It has different types of HTML reports, Extent reports, etc. for a better and clear understanding of our test summary.
+It has listeners who help in creating logs.
+
+Concepts Used In TestNG.xml
+#1) A Suite is represented by one XML file. It can contain one or more tests and is defined by the <suite> tag.
+
+Example: <suite name=”Testing Google Apps”>
+
+#2) A Test is represented by <test> and can contain one or more TestNG classes.
+
+Example: <test name=”Regression”>
+
+#3) A Class is a Java class that contains TestNG annotations. Here it is represented by the <class> tag and can contain one or more test methods.
+
+Example
+
+<classes>
+<class name="Googletest.GmailTest"/>
+<class name="Googletest.MapsTest"/>
+<class name="Googletest.ImagesTest"/>
+</classes>
+
+

@@ -1,0 +1,9 @@
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd" >
+<suite name="Smoke Firefox">
+    <test name="Smoke module day 8 firefox">
+        <classes>
+            <class name="code.HasanLessons.day07_Webtable_Alerts.c1_JavaFakerPractice"></class>
+            <class name="code.HasanLessons.day07_Webtable_Alerts.c2_Alerts"></class>
+        </classes>
+    </test>
+</suite>

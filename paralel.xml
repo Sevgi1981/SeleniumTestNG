@@ -1,0 +1,11 @@
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd" >
+<suite name="Smoke paralel">
+    <test name="Paralel Module" parallel="classes" thread-count="5">
+        <classes>
+            <class name="code.HasanLessons.day09wimdowsAndTabs.c1_Tabs"></class>
+            <class name="code.HasanLessons.day09wimdowsAndTabs.c2_Windows"></class>
+            <class name="code.HasanLessons.day09wimdowsAndTabs.c3_properties_practice"></class>
+
+        </classes>
+    </test>
+</suite>

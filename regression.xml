@@ -1,0 +1,18 @@
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd" >
+<suite name="Regrassion">
+    <test name="Regression module 5">
+        <packages>
+            <package name="code.HasanLessons.day06_Dropdown"></package>
+        </packages>
+    </test>
+    <test name="Regression module 6">
+        <packages>
+            <package name="code.HasanLessons.day07_Webtable_Alerts"></package>
+        </packages>
+    </test>
+    <test name="Regreassion module 7">
+        <classes>
+            <class name="code.HasanLessons.day05_TestNG.c1_TestNGExercise"></class>
+        </classes>
+    </test>
+</suite>
